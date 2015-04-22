@@ -419,18 +419,6 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 > would print the name of the `.pdb` file in `/tmp/data` that has
 > the most lines.
 
-> ## Why record commands in the history before running them? {.challenge}
-> 
-> If you run the command:
-> 
-> ~~~
-> history | tail -5 > recent.sh
-> ~~~
-> 
-> the last command in the file is the `history` command itself, i.e.,
-> the shell has added `history` to the command log before actually
-> running it. In fact, the shell *always* adds commands to the log
-> before running them. Why do you think it does this?
 
 > ## Script reading comprehension {.challenge}
 > 

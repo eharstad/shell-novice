@@ -452,8 +452,3 @@ and we will see it in many other tools as we go on.
 > 2.  It changes the working directory to `/`.
 > 3.  It changes the working directory to the user's home directory.
 > 4.  It produces an error message.
-
-> ## Exploring more `ls` arguments {.challenge}
->
-> What does the command `ls` do when used with the `-s` and `-h`
-> arguments?

@@ -231,7 +231,7 @@ Yesterday it worked
 Today it is not working
 Software is like that.</code></pre>
 <p>From the above text, contained in the file <code>haiku.txt</code>, which command would result in the following output:</p>
-<pre><code>and the presence of absence</code></pre>
+<pre><code>and the presence of absence:</code></pre>
 <ol style="list-style-type: decimal">
 <li><code>grep of haiku.txt</code></li>
 <li><code>grep -E of haiku.txt</code></li>
@@ -240,25 +240,6 @@ Software is like that.</code></pre>
 </ol>
 </div>
 </div>
-<div id="find-pipeline-reading-comprehension" class="challenge panel panel-success">
-<div class="panel-heading">
-<h2 id="find-pipeline-reading-comprehension" class="challenge panel panel-success"><span class="glyphicon glyphicon-pencil"></span><code>find</code> pipeline reading comprehension</h2>
-</div>
-<div class="panel-body">
-<p>Write a short explanatory comment for the following shell script:</p>
-<pre class="input"><code>find . -name &#39;*.dat&#39; | wc -l | sort -n</code></pre>
-</div>
-</div>
-<blockquote>
-<h2 id="matching-ose.dat-but-not-temp">Matching <code>ose.dat</code> but not <code class="challenge">temp</code></h2>
-<p>The <code>-v</code> flag to <code>grep</code> inverts pattern matching, so that only lines which do <em>not</em> match the pattern are printed. Given that, which of the following commands will find all files in <code>/data</code> whose names end in <code>ose.dat</code> (e.g., <code>sucrose.dat</code> or <code>maltose.dat</code>), but do <em>not</em> contain the word <code>temp</code>?</p>
-<ol style="list-style-type: decimal">
-<li><p><code>find /data -name '*.dat' | grep ose | grep -v temp</code></p></li>
-<li><p><code>find /data -name ose.dat | grep -v temp</code></p></li>
-<li><p><code>grep -v temp $(find /data -name '*ose.dat')</code></p></li>
-<li><p>None of the above.</p></li>
-</ol>
-</blockquote>
 <div id="little-women" class="challenge panel panel-success">
 <div class="panel-heading">
 <h2 id="little-women" class="challenge panel panel-success"><span class="glyphicon glyphicon-pencil"></span>Little Women</h2>

@@ -419,37 +419,13 @@ $ grep FE $(find .. -name '*.pdb')
 > following output:
 >
 > ~~~
-> and the presence of absence
+> and the presence of absence:
 > ~~~
 >
 > 1. `grep of haiku.txt`
 > 2. `grep -E of haiku.txt`
 > 3. `grep -w of haiku.txt`
 > 4. `grep -i of haiku.txt`
-
-> ## `find` pipeline reading comprehension {.challenge}
->
-> Write a short explanatory comment for the following shell script:
-> 
-> ~~~ {.input}
-> find . -name '*.dat' | wc -l | sort -n
-> ~~~
-
-> ## Matching `ose.dat` but not `temp` {.challenge}
-> 
-> The `-v` flag to `grep` inverts pattern matching, so that only lines
-> which do *not* match the pattern are printed. Given that, which of
-> the following commands will find all files in `/data` whose names
-> end in `ose.dat` (e.g., `sucrose.dat` or `maltose.dat`), but do
-> *not* contain the word `temp`?
-> 
-> 1. `find /data -name '*.dat' | grep ose | grep -v temp`
-> 
-> 2. `find /data -name ose.dat | grep -v temp`
-> 
-> 3. `grep -v temp $(find /data -name '*ose.dat')`
-> 
-> 4. None of the above.
 
 > ## Little Women {.challenge}
 >

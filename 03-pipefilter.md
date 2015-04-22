@@ -400,20 +400,6 @@ so this matches all the valid data files she has.
 > 
 > Explain why `-n` has this effect.
 
-> ## What does `<` mean? {.challenge}
->
-> What is the difference between:
-> 
-> ~~~
-> wc -l < mydata.dat
-> ~~~
-> 
-> and:
-> 
-> ~~~
-> wc -l mydata.dat
-> ~~~
-
 > ## What does `>>` mean? {.challenge}
 >
 > What is the difference between:

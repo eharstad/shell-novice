@@ -44,9 +44,6 @@ class. */
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: 0 0px 0px;
 }
 
 /* Make space between the glyphicon and the rest of the header */

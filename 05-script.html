@@ -251,6 +251,40 @@ done</code></pre>
 echo $@.dat</code></pre>
 </div>
 </div>
+
+<div id="exercise-answers" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="exercise-answers" class="challenge panel panel-success">Answers:</h2>
+</div>
+<div class="panel-body">
+<ol style="list-style-type: decimal">
+<li>Variables in shell scripts: 2</li>
+<li>List unique species: 
+<pre><code># species.sh
+# Print a list of unique species from each file
+for filename in "$@"
+do
+    cat $filename | cut -d , -f 2 | sort | uniq
+done
+</code></pre>
+</li>
+<li>Find the longest file with a given extension:
+<pre><code># longest.sh
+# print the name of the file with the most lines in directory (arg 1) with extension (arg 2)
+wc -l $1/*.$2 | sort -rn | head -2 | tail -1
+</code></pre>
+</li>
+<li>Script reading comprehension: 
+Script 1 prints <code>fructose.dat glucose.dat sucrose.dat</code>.
+Script 2 prints out the contents of each of the 3 files.
+Script 3 prints <code>fructose.dat glucose.dat sucrose.dat.dat</code>
+</li>
+</ol>
+</div>
+</div>
+
+
+
         </div>
       </div>
       <div class="footer">

@@ -248,6 +248,28 @@ Software is like that.</code></pre>
 <p>You and your friend, having just finished reading <em>Little Women</em> by Louisa May Alcott, are in an argument. Of the four sisters in the book, Jo, Meg, Beth, and Amy, your friend thinks that Jo was the most mentioned. You, however, are certain it was Amy. Luckily, you have a file <code>LittleWomen.txt</code> containing the full text of the novel. Using a<code>for</code> loop, how would you tabulate the number of times each of the four sisters is mentioned? Hint: one solution might employ the commands <code>grep</code> and <code>wc</code> and a <code>|</code>, while another might utilize <code>grep</code> options.</p>
 </div>
 </div>
+
+<div id="exercise-answers" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="exercise-answers" class="challenge panel panel-success">Answers:</h2>
+</div>
+<div class="panel-body">
+<ol style="list-style-type: decimal">
+<li>Using grep: 3</li>
+<li>Little Women:
+<pre><code># count.sh
+# usage: bash count.sh Amy Jo Meg Beth
+for name in $@
+do
+    echo $name
+    grep -w -o $name alcott-little-261.txt | wc -l
+done
+</code></pre>
+</li>
+</ol>
+</div>
+</div>
+
         </div>
       </div>
       <div class="footer">

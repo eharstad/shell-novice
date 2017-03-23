@@ -237,6 +237,22 @@ $ cp intro.txt methods.txt survey.txt</code></pre>
 <p>The command <code>ls -R</code> lists the contents of directories recursively, i.e., lists their sub-directories, sub-sub-directories, and so on in alphabetical order at each level. The command <code>ls -t</code> lists things by time of last change, with most recently changed files or directories first. In what order does <code>ls -R -t</code> display things?</p>
 </div>
 </div>
+
+<div id="exercise-answers" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="exercise-answers" class="challenge panel panel-success">Answers:</h2>
+</div>
+<div class="panel-body">
+<ol style="list-style-type: decimal">
+<li>Renaming files: 2</li>
+<li>Moving and Copying: 2</li>
+<li>Listing Directories and Files: <code>mv fructose.dat sucrose.dat analyzed/</code></li>
+<li>Copy with Multiple Filenames: a) <code>cp</code> when given several filenames and a directory name will copy the files specified by the first two (or more) arguments into the directory specified by the last argument.  b) <code>cp</code> when given three or more filenames will give an error.  The last argument must be the target directory.</li>
+<li>Listing Recursively and By Time: <code>ls -R -t</code> will list items recursuvely and at each level items are listed by time since last change.</li>
+</ol>
+</div>
+</div>
+
         </div>
       </div>
       <div class="footer">

@@ -204,6 +204,28 @@ $ wc -l *.txt</code></pre>
 </div>
 </div>
 
+<div id="uniq" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="uniq" class="challenge panel panel-success"><span class="glyphicon glyphicon-pencil"></span>Removing duplicates with 'uniq'</h2>
+</div>
+<div class="panel-body">
+
+<p>The command `uniq` removes adjacent duplicated lines from its input.  For example, if a file `salmon.txt` contains:</p>
+</pre></code>coho
+coho
+steelhead
+coho
+steelhead
+steelhead</code></pre>
+<p>then `uniq salmon.txt` produces:<p>
+<pre><code>coho
+steelhead
+coho
+steelhead</code></pre>
+<p>Why do you think `uniq` only removes *adjacent* duplicated lines? (Hint: think about very large data sets.) What other command could you combine with it in a pipe to remove all duplicated lines?</p>
+</div>
+</div>
+
 <div id="pipe-reading-comprehension" class="challenge panel panel-success">
 <div class="panel-heading">
 <h2 id="pipe-reading-comprehension" class="challenge panel panel-success"><span class="glyphicon glyphicon-pencil"></span>Pipe reading comprehension</h2>
@@ -251,12 +273,15 @@ bear</code></pre>
 <li>What does <code>sort -n</code> do?: <code>sort -n</code> sorts items numerically instead of lexically.  Without <code>-n</code> numerical items will be sorted by the first digit, and then the second digit, and so on. </li>
 <li>What does <code>>></code> mean?: <code>></code> first deletes the contents of the file if it exists.  <code>>></code> appends output to the end of the file.</li>
 <li>Piping commands together: 4</li>
+<li>Uniq: 
+<pre><code>sort salmon.txt | uniq </code><pre>
+</li>
 <li>Pipe reading comprehension: final.txt contains lines 3-5 sorted in reverse order:
 <pre><code>2012-11-06,rabbit
 2012-11-06,deer
 2012-11-05,raccoon</code></pre>
 </li>
-<li>Pipe construction: <code>cut -d , -f 2 salmon.txt | sort | uniq</code></li>
+<li>Pipe construction: <code>cut -d , -f 2 animals.txt | sort | uniq</code></li>
 </ol>
 </div>
 </div>
